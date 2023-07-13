@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+.detail_shoes_div_frame {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.detail_shoes_img_div_frame, .detail_shoes_text_div_frame {
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+}
+
+.detail_shoes_img_div_frame {
+	width: 30%;
+	padding-left: 24%;
+	padding-right: 5%;
+}
+
+.d_s_img {
+	background-color: #FFEDE6;
+}
+
+.detail_shoes_text_div_frame {
+	width: 30%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 15pt;
+	border-left: black dashed 2px;
+}
+
+.d_s_name_inline_div div {
+	display: inline-block;
+}
+
+.d_s_name_a_div {
+	float: right;		
+}
+
+.d_s_brand {
+	font-family: 'NEXEN_TIRE_Bold';
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+.d_s_name {
+	font-family: 'D2Coding';
+	font-size: 12pt;
+	opacity: 0.7;
+}
+
+.d_s_name_a {
+	border: black dotted 2px;
+	border-radius: 10px;
+	text-decoration: none;
+	font-size: 8pt;
+	padding: 5px;
+	color: #0B610B;
+	opacity: 0.5;
+}
+
+.d_s_name_a:hover {
+	color: black;		
+	opacity: 1;
+}
+
+.border_div {
+	width: 100%;
+	height: 40%;
+	margin-top: 120px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.border_div div {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.d_s_price_inline_div, .d_s_color_inline_div, .d_s_when_inline_div {
+	display: inline-block;
+	border: black ridge 3px;
+	height: 53%;
+	font-family: 'NeoDunggeunmoPro-Regular';
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.d_s_price_inline_div {
+	width: 25%;
+}
+
+.d_s_color_inline_div {
+	width: 35%;
+}
+
+.d_s_when_inline_div {
+	width: 20%;
+}
+
+.d_s_price_text_div, .d_s_color_text_div, .d_s_when_text_div {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	opacity: 0.7;
+}
+
+.d_s_price_div, .d_s_color_div, .d_s_when_div {
+	margin-top: 10px;
+}

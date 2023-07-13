@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@font-face {
+	/*오야 고딕체(타이틀)*/
+    font-family: 'OAGothic-ExtraBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/OAGothic-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+	/*넥센 타이어(목차(축구화 제외))*/
+    font-family: 'NEXEN_TIRE_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/NEXEN_TIRE_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	/*Neo둥근고딕(축구화&'/')*/
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 영어 */
+@font-face {
+    font-family: 'D2Coding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 가격, 숫자 */
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.fixed_div {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 999;
+}
+
+.main_log_div {
+	background-color: white;
+}
+
+.title_div {
+	background-color: white;
+}
+
+.title_main_div {
+	margin-left: 8%;
+
+}
+
+.title_div div {
+	display: inline-block;
+	
+}
+
+.blank_div {
+	background-color: white;
+	height: 40px;
+}
+
+.list_div {
+	background-color: white;
+	height: 50px;
+	text-align: center;
+}
+
+.content_div {
+	position: relative;
+	margin-top: 300px;
+}
+
+.content_div::-webkit-scrollbar {
+	/* display: none !important; */
+}
+
+.title_sub_div {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+}
+
+.title_sub_div .sub_img {
+	width: 50px;
+	height: 50px;
+}
+
+ul, li {
+	list-style: none;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+
+li {
+	display: inline-block;
+}
+
+.log_ul {
+	text-align: right;
+	margin-left: 70%;
+	margin-right: 3%;
+}
+
+.log_li {
+	font-family: 'NeoDunggeunmoPro-Regular';
+	font-size: 15pt;
+	right: 0px;
+}
+
+.ca_li {
+	font-family: 'NEXEN_TIRE_Bold';
+}
+
+.ca_sl {
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 25pt;
+}
+
+.ca_li_a {
+	text-decoration: none;
+	font-size: 25pt;
+	color: black;	
+	transition: color 0.5s ease;
+}
+
+.ca_li_a:hover {
+	color: orange;	
+}
+
+#ca_li_all {
+	color: blue;
+	transition: color 0.5s ease;
+}
+
+#ca_li_all:hover {
+	color: red;	
+	transition: color 0.5s ease;
+}
+
+.main_log_a {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	transition: color 0.5s ease;
+}
+
+.main_log_a:hover {
+	color: gray;
+	transition: color 0.5s ease;
+}
+
+.ex_rate_div {
+	position: fixed;
+	text-align: center;
+	top: 115px;
+	right: 35px;
+	width: 200px;
+	height: 60px;
+}
+
+.er_data_div {
+	display: inline-block;
+	margin-right: 7px;
+}
+
+.text_div {
+	font-family: 'NeoDunggeunmoPro-Regular';
+	margin-left: 10px;
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+.scroll_btn_div {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+}
+
+.scroll_btn {
+	display: none;
+	cursor: pointer;
+}

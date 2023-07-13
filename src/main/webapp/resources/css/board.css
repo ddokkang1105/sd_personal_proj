@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+.board_title_h {
+	border-top: black dashed 2px;
+	border-bottom: black dotted 2px;
+	text-align: center;
+	font-family: 'OAGothic-ExtraBold';
+	font-size: 15pt;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.board_regist_div {
+	width: 100%;
+	text-align: center;
+}
+
+.board_regist_div {
+	height: 200px;
+	border-bottom: black dashed 2px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.board_reg_div {
+	width: 100%;
+	height: 100%;
+}
+
+.board_regist_div div {
+	display: inline-block;
+}
+
+.r_b_form_div {
+	width: 100%;
+	height: 100%;
+}
+
+.r_border_div_frame, .b_board_div_frame {
+	width: 1000px;
+	height: 200px;
+	border: #004000 double 3px;
+	border-radius: 5px;
+	background-color: green;
+}
+
+.r_b_text_div, .b_text_tA_div, .c_all_div {
+	width: 700px;
+	height: 150px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	border-bottom: #473100 solid 10px;
+}
+
+.r_b_text_tA, .b_text_tA, .c_b_text_tA {
+	resize: none;
+	font-family: 'D2Coding';
+	width: 500px;
+	height: 110px;
+	border: white solid 2px;
+	border-radius: 10px;
+	background-color: transparent;
+	font-size: 30pt;
+	color: white;
+	padding: 20px;
+}
+
+.r_b_text_tA::placeholder {
+	color: white;
+	opacity: 0.7;
+}
+
+.r_b_text_tA:focus {
+	border-color: #003300;
+}
+
+.r_btn_div {
+	position: absolute;
+	top: 650px;
+	width: 100px;
+}
+
+.r_btn_i, .cha_btn_i, .del_btn_i, .c_btn_i {
+	font-family: 'D2Coding';
+	width: 50px;
+	height: 50px;
+	border: white solid 2px;
+	border-radius: 5px;
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.5s ease;
+}
+
+.r_btn_i:hover, .cha_btn_i:hover, .del_btn_i:hover, .c_btn_i:hover {
+	background-color: #003300;
+	transition: background-color 0.5s ease;
+}
+
+.show_board {
+	padding-top: 50px;
+	padding-bottom: 70px;
+	text-align: center;
+	width: 100%;
+	height: 950px;
+}
+
+.show_board_frame {
+	width: 100%;
+	height: 100%;
+}
+
+.get_board {
+	width: 1000px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.left_btn_div, .right_btn_div, .get_board {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.left_btn_div, .right_btn_div {
+	font-size: 50pt;
+}	
+
+.b_board_div_frame {
+	margin-bottom: 100px;
+}
+
+.b_board_div {
+	width: 90%;
+}
+
+.b_ctrl_div {
+	width: 10%;
+}
+
+.b_board_div, .b_ctrl_div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.id_time_inline_div, .b_text_div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.b_text_tA, .c_b_text_tA {
+	font-size: 25pt;
+}
+
+.id_time_inline_div {
+	height: 170px;
+	font-family: 'NeoDunggeunmoPro-Regular';
+	font-size: 17pt;
+	color: white;
+}
+
+.b_id_info_div, .b_time_info_div {
+	margin-bottom: 3px;
+	border-bottom: white solid 2px;
+}
+
+.b_time_all_div {
+	margin-top: 60px;
+}
+
+.c_all_input_div {
+	width: 620px;
+}
+
+.c_btn_div {
+	width: 80px;
+}
+
+.c_all_input_div, .c_btn_div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.b_ctrl_div {
+	height: 170px;
+	font-family: 'NeoDunggeunmoPro-Regular';
+}
+
+.b_del_btn_div {
+	margin-top: 40px;
+}
+

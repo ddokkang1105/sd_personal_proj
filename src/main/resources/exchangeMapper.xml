@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ddokkang.sdp1.exchange.ExchangeMapper">
+	<insert id="addExchange" parameterType="com.ddokkang.sdp1.exchange.ExchangeRateItem">
+		insert into sdproj_ex_rate values(
+		sdproj_ex_rate_seq.nextval,#{er_when}, #{er_result}, #{er_cur_unit}, #{er_ttb}, #{er_tts}, #{er_deal_bas_r}, #{er_bkpr}, 
+		#{er_yy_efee_r}, #{er_ten_dd_efee_r}, #{er_kftc_bkpr}, #{er_kftc_deal_bas_r}, #{er_cur_nm})
+	</insert>
+    
+	<select id="getExchange" resultType="com.ddokkang.sdp1.exchange.ExchangeRateItem" 
+		parameterType="com.ddokkang.sdp1.exchange.ExchangeRateItem">
+		select er_when, er_cur_unit, er_kftc_deal_bas_r, er_cur_nm from sdproj_ex_rate  
+		where er_when = #{er_when} 
+		order by er_no
+	</select>
+	
+	<delete id="truncExchange">
+		truncate table sdproj_ex_rate
+	</delete>
+	
+	<select id="countExchange" resultType="java.lang.Integer">
+		select count(*) from sdproj_ex_rate
+	</select>
+	
+</mapper>

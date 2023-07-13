@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ddokkang.sdp1.shoes.ShoesMapper">
+	<select id="getShoes" resultType="com.ddokkang.sdp1.shoes.Shoes"
+		parameterType="com.ddokkang.sdp1.shoes.Shoes">
+		select * from sdproj_shoes where s_class like '%'||#{s_class}||'%' order by s_no
+	</select>
+	
+	<select id="getDetail" resultType="com.ddokkang.sdp1.shoes.Shoes"
+		parameterType="com.ddokkang.sdp1.shoes.Shoes">
+		select * from sdproj_shoes where s_no = ${s_no}
+	</select>
+	
+	<select id="getSearch" resultType="com.ddokkang.sdp1.shoes.Shoes" 
+		parameterType="com.ddokkang.sdp1.shoes.Shoes">
+		select * from sdproj_shoes where s_keyword like '%'||#{s_keyword}||'%' order by s_no
+	</select>
+	
+	<insert id="regist" parameterType="com.ddokkang.sdp1.shoes.Shoes">
+		insert into sdproj_shoes values(#{s_no}, #{s_brand}, #{s_class}, #{s_name}, #{s_price}, #{s_color}, #{s_when}, #{s_keyword}, #{s_image})
+	</insert>
+	
+	<update id="change" parameterType="com.ddokkang.sdp1.shoes.Shoes">
+		update sdproj_shoes set s_brand = #{s_brand}, s_class = #{s_class}, s_name = #{s_name}, 
+			s_price = #{s_price}, s_color = #{s_color}, s_when = #{s_when}, s_keyword = #{s_keyword}, 
+			s_image = #{s_image} where s_no = #{s_no}
+	</update>
+	
+	<delete id="drop" parameterType="com.ddokkang.sdp1.shoes.Shoes">
+		delete from sdproj_shoes where s_no = #{s_no}
+	</delete>
+	
+	<select id="getMaxS_no" resultType="java.lang.Integer">
+		select max(s_no) from sdproj_shoes
+	</select>
+	
+</mapper>
